@@ -2,7 +2,7 @@
 // app.js — جلب وعرض بيانات العملاء (portfolio)
 // ============================================
 
-import { supabase } from '../supabaseConfig.js'
+import { supabase } from '../Js/supabaseConfig'
 
 // 1. جلب البيانات من Supabase
 async function fetchOurWork() {

@@ -2,7 +2,7 @@
 // aboutEmployees.js — جلب وعرض بيانات الفريق
 // ============================================
 
-import { supabase } from '../supabaseConfig'
+import { supabase } from '../supabaseConfig.js'
 
 async function fetchTeam() {
     const { data, error } = await supabase

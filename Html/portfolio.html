@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/Img/logo-icon.png" />
+    <title>أعمالنا | عبدالله إسلام</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Css/common.css" />
+    <link rel="stylesheet" href="/Css/portfolio.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <a href="/Html/index.html" class="logo">
+        <div class="logo-icon">
+          <!-- ضع هنا نفس شعار الموقع الرئيسي -->
+          <img src="/Img/logo-icon.png" alt="شعار عبدالله إسلام" />
+        </div>
+        <div class="logo-text">
+          <strong>عبدالله إسلام</strong>
+          <small>خدمات التسويق الإلكتروني</small>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/Html/index.html">الرئيسية</a></li>
+        <li><a href="index.html#about">من نحن</a></li>
+        <li><a href="index.html#services">خدماتنا</a></li>
+        <li><a href="portfolio.html" style="color: var(--blue)">أعمالنا</a></li>
+        <li><a href="index.html#contact" class="nav-cta">تواصل معنا</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/Html/index.html" onclick="toggleMenu()">الرئيسية</a>
+      <a href="index.html#about" onclick="toggleMenu()">من نحن</a>
+      <a href="index.html#services" onclick="toggleMenu()">خدماتنا</a>
+      <a href="portfolio.html" onclick="toggleMenu()">أعمالنا</a>
+      <a href="index.html#contact" onclick="toggleMenu()">تواصل معنا</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="tag">معرض الأعمال</div>
+      <h1>من <span>أعمالنا</span></h1>
+      <p>نماذج حقيقية من مشاريع نفتخر بتقديمها لعملائنا</p>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- قائمة العملاء — انسخ الـ client-block وكررها لكل عميل  -->
+    <!-- ======================================================== -->
+    <div class="clients-wrapper" id="clients-container">
+      <div class="client-divider"></div>
+    </div>
+    <!-- نهاية clients-wrapper -->
+
+    <!-- FOOTER -->
+    <div class="page-footer">
+      <p>
+        © 2026 عبدالله إسلام | مبدايا — <a href="/Html/index.html">العودة للرئيسية</a>
+      </p>
+    </div>
+
+    <script src="/Js/PortfolioJs/animation.js"></script>
+    <script type="module" src="/Js/app.js"></script>
+    <script>
+      // window.addEventListener('scroll', () => {
+      //   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+      // });
+
+      // function toggleMenu() {
+      //   document.getElementById('mobileMenu').classList.toggle('open');
+      // }
+
+      // // Fade in animation
+      // const observer = new IntersectionObserver((entries) => {
+      //   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      // }, { threshold: 0.08 });
+      // document.querySelectorAll('.client-block').forEach(el => observer.observe(el));
+
+      // // Show image and hide placeholder when image loads
+      // document.querySelectorAll('.client-logo img, .design-item img').forEach(img => {
+      //   if (img.src && !img.src.includes('CLIENT_')) {
+      //     img.style.display = 'block';
+      //     const placeholder = img.nextElementSibling;
+      //     if (placeholder) placeholder.style.display = 'none';
+      //   }
+      //   img.onload = function() {
+      //     this.style.display = 'block';
+      //     const placeholder = this.nextElementSibling;
+      //     if (placeholder) placeholder.style.display = 'none';
+      //   };
+      // });
+
+      // // Show video and hide placeholder when video is ready
+      // document.querySelectorAll('.reel-item video').forEach(video => {
+      //   if (video.src && !video.src.includes('CLIENT_')) {
+      //     video.style.display = 'block';
+      //     const placeholder = video.nextElementSibling;
+      //     if (placeholder) placeholder.style.display = 'none';
+      //   }
+      // });
+    </script>
+
+    <div
+      id="lightbox"
+      onclick="this.style.display = 'none'"
+      style="
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <span
+        style="
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          color: white;
+          font-size: 40px;
+          cursor: pointer;
+        "
+        >&times;</span
+      >
+      <img
+        id="lightbox-img"
+        src=""
+        style="
+          max-width: 90%;
+          max-height: 90%;
+          border-radius: 10px;
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        "
+      />
+    </div>
+  </body>
+</html>

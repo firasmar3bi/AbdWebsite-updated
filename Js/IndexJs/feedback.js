@@ -1,4 +1,4 @@
-import { supabase } from "../supabaseConfig.js"; 
+import { supabase } from '/Js/supabaseConfig.js';
 
 // 1. دالة جلب البيانات من الداتا بيس
 async function loadFeedback() {

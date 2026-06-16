@@ -44,19 +44,6 @@ function renderTeam(teamMembers) {
                         <span class="team-role">${member.job_title}</span>
                     </div>
                 </div>
-                <div class="team-card-body">
-                    <div class="team-edu">
-                        <span class="edu-icon">🎓</span>
-                        <p>${member.education}</p>
-                    </div>
-                    <div class="team-skills">
-                        ${skillsHtml}
-                    </div>
-                    <div class="team-exp">
-                        <div class="exp-num">${expNumber}</div>
-                        <div class="exp-text">${expText}</div>
-                    </div>
-                </div>
             </div>
         `
     })

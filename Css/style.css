@@ -265,6 +265,10 @@ section { padding: 100px 5%; }
     text-decoration: none;
     transition: gap 0.2s;
     cursor: pointer;
+    color :#1B3BFF;
+    background-color: #f4f5f7;
+    padding: 4px 10px;
+    border-radius: 10px;
 }
 .service-link:hover { gap: 10px; }
 
